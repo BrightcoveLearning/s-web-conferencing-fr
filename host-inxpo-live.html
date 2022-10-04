@@ -1,47 +1,30 @@
 <article class="bcls-article">
-  <h1>{{ page.title }}</h1>
-  <summary>{{ page.description }}</summary>
-  <section class="bcls-section">
-    <h2 id="Introduction">Introduction</h2>
-    <p>INXPO is a video streaming platform, for creating TV-style event experiences. To reach a larger audience, you can leverage Brightcove Live to stream your event.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="Steps">Steps</h2>
-    <p>Follow these steps to host a meeting to Brightcove Live:</p>
+  <h1>{{page.title}}</h1> <summary>{{page.description}}</summary> <section class="bcls-section">
+    <h2 id="Introduction">Présentation</h2>
+    <p>INXPO est une plateforme de streaming vidéo permettant de créer des expériences événementielles de style télévisuel. Pour toucher un public plus large, vous pouvez utiliser Brightcove Live pour diffuser votre événement en continu.</p>  </section><section class="bcls-section">
+    <h2 id="Steps">Étapes</h2>
+    <p>Suivez ces étapes pour organiser une réunion sur Brightcove Live:</p>
     <ol class="bcls-tasklist-restart">
-      <li>In Studio, create a 
-  {% if site.product_short == "Video Cloud" or site.product_short == "Beacon" or site.product_short == "CorpTV" %}        
-          <a href="/live/live-module/creating-and-managing-live-events-using-live-module.html" target="_blank">live event using the Live module</a>.
-    {% endif %}
-      {% if site.product_short == "Live" %}
-          <a href="/live-module/creating-and-managing-live-events-using-live-module.html" target="_blank">live event using the Live module</a>.
-    {% endif %}
-        <aside class="bcls-aside bcls-aside--information">If you want to save the broadcast after it’s complete, make sure to check the <strong>Convert event to video asset when complete</strong> checkbox!</aside>
+      <li>Dans Studio, créez un événement en<a href="/live/live-module/creating-and-managing-live-events-using-live-module.html" target="_blank"> direct {% if site.product_short == Video Cloud-fr/ ou site.product_short == Beacon-fr/ ou site.product_short == CorpTV-fr/ %} en utilisant le module Live</a>. {% endif %} {% if site.product_short == Live-fr/ %} <a href="/live-module/creating-and-managing-live-events-using-live-module.html" target="_blank">événement en direct à l'aide du module Live</a>. {% endif %}<aside class="bcls-aside bcls-aside--information"> Si vous souhaitez enregistrer la diffusion une fois qu'elle est terminée, assurez-vous de cocher la case<strong> Convertir l'événement en vidéo une fois terminée</strong>™ case à cocher&nbsp;!</aside>
       </li>
-      <li>Once you create the live event, copy the Streaming RTMP URL and Streaming Key from the <strong>Control Room</strong> panel.
+      <li>Une fois que vous avez créé l'événement en direct, copiez l'URL RTMP Streaming et la clé de diffusion depuis le<strong> panneau</strong> Control Room.
         <ul>
-          <li><strong>Streaming RTMP URL</strong> - <strong>Streaming Endpoint URL</strong> (You can find the endpoint URL in the Brightcove Live Control Room</li>
-          <li><strong>Streaming Key</strong> - <strong>Stream Name</strong> (In Brightcove, the Stream Name is always <strong>"alive"</strong>)</li>
+          <li><strong>URL RTMP de</strong> streaming<strong> - URL du point de terminaison de streaming</strong> (Vous pouvez trouver l'URL du point de terminaison dans la salle de contrôle Brightcove Live</li>
+          <li><strong>Clé de diffusion en continu</strong>: nom du<strong> flux</strong> (dans Brightcove, le nom du flux est toujours<strong> actif-fr/</strong>)</li>
         </ul>
       </li>
-      <li>Publish and embed the player for this live event in your website/intranet page, and note the page URL.</li>
-    </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="Streaming Session">Configure the streaming session</h2>
-    <p>With the Streaming RTMP URL and Streaming Key you must configure them on the INXPO producer tool.</p>
+      <li>Publiez et intégrez le lecteur de cet événement en direct sur votre site web/page intranet, et notez l'URL de la page.</li>
+    </ol>  </section><section class="bcls-section">
+    <h2 id="Streaming Session">Configuration de la session de streaming</h2>
+    <p>Avec l'URL RTMP Streaming et la clé de diffusion en continu, vous devez les configurer sur l'outil de production INXPO.</p>
     <ol class="bcls-tasklist-restart">
-      <li>Go to the INXPO producer tool and click the 3 dots icon to reach the Output Details section.
-        <figure class="bcls-figure"><img class="bcls-image" alt="" src="/assets/images/s-web-conferencing-img/inxpo/3dots.png" /></figure>
+      <li>Accédez à l'outil de production INXPO et cliquez sur l'icône à 3 points pour accéder à la section Détails de la sortie. <figure class="bcls-figure"><img class="bcls-image" alt="" src="/assets/images/s-web-conferencing-img/inxpo/3dots.png" /></figure>
       </li>
-      <li>Click the pencil icon. </li>
-      <li>Fill the following details with your Brightcove Live event credentials.
-        <figure class="bcls-figure"><img class="bcls-image" alt="" src="/assets/images/s-web-conferencing-img/inxpo/RTMPOuput.png" /></figure>
+      <li>Cliquez sur l'icône représentant un crayon. </li>
+      <li>Remplissez les informations suivantes avec vos informations d'identification pour l'événement Brightcove Live. <figure class="bcls-figure"><img class="bcls-image" alt="" src="/assets/images/s-web-conferencing-img/inxpo/RTMPOuput.png" /></figure>
       </li>
-      <li>In the <strong>Title</strong> field, add the Brightcove Live Stream Name.</li>
-      <li>In the <strong>Encoding Profile</strong> field, select the default encoding profile which settings define how the encoder compresses and delivers the webcast to attendees.</li>
-      <li>In the <strong>RTMP URL</strong> field, insert the Brightcove Streaming Endpoint URL.</li>
-      <li>Click the <strong>OK</strong> button.</li>
-    </ol>
-  </section>
-</article>
+      <li>Dans le<strong> champ</strong> Titre, ajoutez le nom du flux en direct de Brightcove.</li>
+      <li>Dans le<strong> champ Profil d'</strong>encodage, sélectionnez le profil d'encodage par défaut dont les paramètres définissent la façon dont l'encodeur compresse et diffuse la webdiffusion aux participants.</li>
+      <li>Dans le<strong> champ URL</strong> RTMP, insérez l'URL du point de terminaison de streaming Brightcove.</li>
+      <li>Cliquez sur le<strong> bouton</strong> OK.</li>
+    </ol>   </section></article>

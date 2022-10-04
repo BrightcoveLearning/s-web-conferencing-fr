@@ -1,67 +1,44 @@
 <article class="bcls-article">
-  <h1>{{ page.title }}</h1>
-  <summary>{{ page.description }}
-    <aside class="bcls-aside bcls-aside--information">To integrate and stream a Zoom meeting directly from Brightcove Live, please visit the 
-  {% if site.product_short == "Video Cloud" or site.product_short == "Beacon" or site.product_short == "CorpTV" %}      
-        <a href="/live/live-module/zoom-live-integration.html" target="_blank">following documentation</a>.
-  {% endif %}
-{% if site.product_short == "Live" %}
-      <a href="/live-module/zoom-live-integration.html" target="_blank">following documentation</a>.
-        {% endif %}
-      </aside>
-  </summary>
-  <section class="bcls-section">
-    <h2 id="Introduction">Introduction</h2>
-    <p>Zoom Video Communications is a technology company that offers a cloud-based, peer-to-peer software platform for teleconferencing, telecommuting, and distance education. To reach a larger audience, you can leverage Brightcove Live to stream your meeting for others to see. </p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="Steps">Steps</h2>
-    <p> Follow these steps to host a conference or webinar to Brightcove Live: </p>
+  <h1>{{page.title}}</h1> <summary>{{page.description}}<aside class="bcls-aside bcls-aside--information"> Pour intégrer et diffuser une réunion Zoom directement depuis Brightcove Live, rendez-vous sur le site {% if site.product_short == Video Cloud-fr/ ou site.product_short == Beacon-fr/ ou site.product_short == CorpTV-fr/ %}<a href="/live/live-module/zoom-live-integration.html" target="_blank"> documentation suivante</a>. {% endif %} {% if site.product_short == Live-fr/ %} documentation<a href="/live-module/zoom-live-integration.html" target="_blank"> suivante</a>. {% endif %} </aside> </summary> <section class="bcls-section">
+    <h2 id="Introduction">Présentation</h2>
+    <p>Zoom Video Communications est une société technologique qui propose une plate-forme logicielle peer-to-peer basée sur le cloud pour les téléconférences, le télétravail et l'enseignement à distance. Pour toucher un public plus large, vous pouvez utiliser Brightcove Live pour diffuser votre réunion en streaming afin que les autres puissent la voir. </p>  </section><section class="bcls-section">
+    <h2 id="Steps">Étapes</h2>
+    <p> Suivez ces étapes pour organiser une conférence ou un webinaire sur Brightcove Live: </p>
     <ol class="bcls-tasklist-restart">
-      <li>For <strong>Zoom conferences</strong>, do the following:
+      <li>Pour les conférences<strong> Zoom</strong>, procédez comme suit:
         <ol>
-          <li> Navigate to your Zoom Meeting <a target="_blank" href="https://zoom.us/profile/setting">Settings</a> and scroll to the <strong>In Meeting (Advanced</strong> section. </li>
-          <li> Enable the <strong>Allow live streaming meetings</strong> option by clicking the toggle switch. If you don’t see this option, talk to your Zoom Account Manager about how to add this feature to your account. </li>
-          <li>Select <strong>Custom Live Streaming Service</strong>, and optionally enter text notes in the box.
-            <figure class="bcls-figure"><img class="bcls-image" alt="" src="/assets/images/s-web-conferencing-img/zoom/0.png" /></figure>
+          <li> Accédez aux<a target="_blank" href="https://zoom.us/profile/setting"> paramètres de votre réunion Zoom</a> et faites défiler jusqu'à la<strong> section</strong> En réunion (Avancé). </li>
+          <li> Activez l'<strong>option</strong> Autoriser les réunions de diffusion en direct en cliquant sur le commutateur à bascule. Si vous ne voyez pas cette option, parlez à votre responsable de compte Zoom pour savoir comment ajouter cette fonctionnalité à votre compte.™ </li>
+          <li>Sélectionnez Service <strong></strong>personnalisé de diffusion en direct et saisissez éventuellement des notes textuelles dans la zone. <figure class="bcls-figure"><img class="bcls-image" alt="" src="/assets/images/s-web-conferencing-img/zoom/0.png" /></figure>
           </li>
         </ol>
-        <p>For <strong>Zoom webinars</strong>, do the following:</p>
+        <p>Pour les webinaires<strong> Zoom</strong>, procédez comme suit:</p>
         <ol>
-          <li> Navigate to your our Zoom Webinar Settings and scroll to the <strong>In Webinar Settings</strong> section. </li>
-          <li> Enable the ​​<strong>Allow hosts to live stream their webinars</strong> option. </li>
-          <li>Select <strong>Custom Streaming Service</strong>, and save. </li>
+          <li> Accédez à vos paramètres de webinaire Zoom et faites défiler jusqu'<strong>à la</strong> section Paramètres du webinaire. </li>
+          <li> Activez l'option «<strong>&nbsp;Autoriser les hôtes à diffuser leurs</strong> webinaires en direct-fr/. </li>
+          <li>Sélectionnez<strong> Custom Streaming Service</strong>, puis enregistrez. </li>
         </ol>
       </li>
-        {% if site.product_short == "Video Cloud" or site.product_short == "Beacon" or site.product_short == "CorpTV" %}
-      <li>In Studio, create a <a target="_blank" href="/live/live-module/creating-and-managing-live-events-using-live-module.html">live event using the Live module</a>.
-    {% endif %}
-          {% if site.product_short == "Live" %}
-      <li>In Studio, create a <a target="_blank" href="/live-module/creating-and-managing-live-events-using-live-module.html">live event using the Live module</a>.
-    {% endif %}        
-        <aside class="bcls-aside bcls-aside--information">Note: If you want to save the broadcast after it’s complete, make sure to check the <strong>Convert event to video asset when complete</strong> checkbox.</aside>
+        {% if site.product_short == Video Cloud-fr/ ou site.product_short == Beacon-fr/ ou site.product_short == CorpTV-fr/ %}
+      <li>Dans Studio, créez un événement<a target="_blank" href="/live/live-module/creating-and-managing-live-events-using-live-module.html"> en direct à l'aide du module Live</a>. {% endif %} {% if site.product_short == Live-fr/ %}
+      <li>Dans Studio, créez un événement<a target="_blank" href="/live-module/creating-and-managing-live-events-using-live-module.html"> en direct à l'aide du module Live</a>. {% endif %}<aside class="bcls-aside bcls-aside--information"> Remarque: Si vous souhaitez enregistrer la diffusion une fois celle-ci terminée, assurez-vous de cocher la case<strong> Convertir l'événement en ressource vidéo une fois terminé</strong>.™</aside>
       </li>
-      <li>When you create a live event, you will have access to the Streaming URL and Streaming Key.
+      <li>Lorsque vous créez un événement en direct, vous avez accès à l'URL de diffusion en continu et à la clé de diffusion en continu.
         <ul>
-          <li><strong>Streaming URL</strong> - Streaming endpoint URL (You can find the endpoint URL in the Brightcove Live Control Room</li>
-          <li><strong>Streaming Key</strong> - Stream Name (In Brightcove, the Stream Name is always <strong>"alive"</strong>)</li>
+          <li><strong>URL de diffusion</strong>: URL du point de terminaison de streaming (Vous pouvez trouver l'URL du point de terminaison dans la salle de contrôle Brightcove Live</li>
+          <li><strong>Clé de diffusion en continu</strong>: nom du flux (dans Brightcove, le nom du flux est toujours<strong> actif-fr/</strong>)</li>
         </ul>
       </li>
-      <li>Publish and embed the player for this live event in your website/intranet page, and note the page URL.
+      <li>Publiez et intégrez le lecteur de cet événement en direct sur votre site web/page intranet, et notez l'URL de la page.
         <ul>
-          <li><strong>Conferences</strong> - For Zoom conferences, navigate to your <a target="_blank" href="https://zoom.us/meeting">scheduled meeting</a> list and select the meeting that you would like to stream.</li>
-          <li><strong>Webinars</strong> - For Zoom webinars, return to the <a target="_blank" href="https://zoom.us/webinar/list">Webinars screen</a>, and schedule a Webinar. Select the <strong>Live Streaming</strong> tab.</li>
+          <li><strong>Conférences</strong>: pour les conférences Zoom, accédez à la<a target="_blank" href="https://zoom.us/meeting"> liste des réunions</a> planifiées et sélectionnez la réunion que vous souhaitez diffuser en continu.</li>
+          <li><strong>Webinaires</strong> - Pour les webinaires Zoom, revenez à l'écran <a target="_blank" href="https://zoom.us/webinar/list"></a>Webinaires et planifiez un webinaire. Sélectionnez l'<strong>onglet</strong> Diffusion en direct.</li>
         </ul>
       </li>
-      <li>Scroll to the <strong>Live Streaming</strong> section
-        <figure class="bcls-figure"><img class="bcls-image" alt="" src="/assets/images/s-web-conferencing-img/zoom/1.png" /></figure>
+      <li>Faites défiler jusqu'à la<strong> section Diffusion en</strong> direct <figure class="bcls-figure"><img class="bcls-image" alt="" src="/assets/images/s-web-conferencing-img/zoom/1.png" /></figure>
       </li>
-      <li>Select the <strong>configure live stream settings</strong> link. Here you will enter the Streaming URL, Streaming Key and the URL of the page where you are hosting the player.
-        <figure class="bcls-figure"><img class="bcls-image" alt="" src="/assets/images/s-web-conferencing-img/zoom/2.png" /></figure>
+      <li>Sélectionnez le<strong> lien</strong> Configurer les paramètres de diffusion en direct. Vous allez entrer l'URL de diffusion, la clé de diffusion et l'URL de la page sur laquelle vous hébergez le lecteur. <figure class="bcls-figure"><img class="bcls-image" alt="" src="/assets/images/s-web-conferencing-img/zoom/2.png" /></figure>
       </li>
-      <li>From your Zoom call, click the <strong>MORE</strong> button, and select the <strong>Live on Custom Live Streaming Service</strong> option. This will start the live stream.
-        <figure class="bcls-figure"><img class="bcls-image" alt="" src="/assets/images/s-web-conferencing-img/zoom/3.png" /></figure>
+      <li>À partir de votre appel Zoom, cliquez sur le<strong> bouton</strong> PLUS, puis sélectionnez l'<strong>option</strong> Live on Custom Live Streaming Service. Cela lancera la diffusion en direct. <figure class="bcls-figure"><img class="bcls-image" alt="" src="/assets/images/s-web-conferencing-img/zoom/3.png" /></figure>
       </li>
-    </ol>
-  </section>
-</article>
+    </ol>   </section></article>
